@@ -4,50 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <article>
-      <section>
-        <h1>Sign in or create an account</h1>
-        <form action="#" method="post">
-          <p>*indicates required field</p>
-          <label for="uname/mail">*User name or email address</label>
-          <input type="text" name="uname/mail" id="uname/mail" />
+    <div id="signup">
+      <div>
+        <img
+          src="../form 1/images/sebastian-svenson-d2w-_1LJioQ-unsplash 1.png"
+          alt="Sebastian-Svenson"
+        />
+      </div>
 
-          <label for="pswd">*Password</label>
-          <input type="password" name="password" id="pswd" />
+      <div>
+        <img src="../form 1/images/Logo.png" alt="Logo" />
 
-          <div>
-            <p>
-              <input type="checkbox" />
-              Keep me sign in
-              <span><i></i></span>
-            </p>
-            <p><a href="#">Forget your username?</a></p>
-            <p><a href="#">Forget your password?</a></p>
+        <section id="signup__content">
+          <section id="welcome">
+            <h2>Welcome to Design Community</h2>
 
             <div>
               <p>
-                Checking this box will reduce the number of times you’re asked
-                to sign in. To keep your account secure, use this option only on
-                your personal devices.
+                Already have an ccount?
+                <a href="../form 1/login.html">Log in</a>
               </p>
             </div>
-          </div>
+          </section>
 
-          <button>Sign in</button>
-        </form>
-      </section>
+          <form action="#" method="post">
+            <div id="data__mail">
+              <div>
+                <label for="mail">Email</label>
+              </div>
+              <input type="mail" name="mail" id="mail" />
+            </div>
 
-      <section>
-        <h2>Join our rewards</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-          lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Morbi lobortis maximus
-        </p>
-        <button>Join now</button>
-      </section>
-    </article>
+            <div id="data__uname">
+              <div>
+                <label for="uname">Username</label>
+              </div>
+              <input type="text" name="uname" id="uname" />
+            </div>
+
+            <div id="data__pswd">
+              <div>
+                <label for="pswd">Password</label>
+              </div>
+              <input type="password" name="pswd" id="pswd" />
+
+              <div id="pswd__pattern">
+                <div class="pswd__pattern__list">
+                  <ul>
+                    <li>Use 8 or more characters</li>
+                    <li>One Uppercase character</li>
+                  </ul>
+                </div>
+
+                <div class="pswd__pattern__list">
+                  <ul>
+                    <li>One lowercase character</li>
+                    <li>One special character</li>
+                  </ul>
+                </div>
+            
+                <div class="pswd__pattern__list">
+                  <li>One number</li>
+                <div>
+              </div>
+            </div>
+
+            <div id="recievemail">
+              <input type="checkbox" name="productupdate" id="productupdate__mail">
+              <p>
+                I want to receive emails about the product, feature updates,
+                events, and marketing promotions.
+              </p>
+            </div>
+
+            <div id="terms">
+              <p>
+                By creating an account, you agree to the
+                <a href="#">Terms of use</a> and <a href="#">Privacy Policy.</a>
+              </p>
+            </div>
+
+            <div id="createbutton">
+              <input type="submit" value="Create an account" />
+<p>Already habe an account? <a href="../form 1/login.html">Login</a></p>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

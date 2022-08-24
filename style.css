@@ -3,42 +3,324 @@
 }
 
 body {
-  width: 52.6875em;
-  height: 64em;
-  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(245, 245, 245);
   margin: 0;
   padding: 0;
 }
 
-#login {
+#signup {
+  width: 100%;
+  height: 64rem;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
-#login__content {
-  width: 48.625rem;
-  height: 62.6875rem;
+#signup div:first-child img {
+  margin-left: 4.0625rem;
+  margin-top: 0.875rem;
+  margin-bottom: 0.8125rem;
+  margin-right: 1.75rem;
 }
 
-#login__content h2 {
-  width: 32.625rem;
+#signup div:nth-child(2) img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+#signup__content {
+  width: 41.5625rem;
+  /* width: 52.6875rem; */
+  height: 100%;
+  margin: 2rem 1.5625rem 7.9375rem 2rem;
+  /* border: 2px solid red; */
+}
+
+/* form {
+  border: 1px solid blue;
+} */
+
+#signup__content #welcome {
+  width: 32.0625rem;
+  height: 4.875rem;
+  margin-bottom: 2rem;
+}
+#signup__content #welcome h2 {
   height: 3rem;
-  color: #333;
+  color: rgb(51, 51, 51);
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-size: 2rem;
   line-height: 3rem;
+  margin: 0;
   display: flex;
   align-items: center;
 }
 
-#login div:first-of-type {
-  margin: 1.5rem;
+#signup__content #welcome div {
+  width: 15.9375rem;
+  height: 1.75rem;
+  padding: 0.125rem;
+  margin: 0;
 }
 
-#login div:last-child {
-  width: 43.125rem;
-  height: 65.6875rem;
-  padding-left: 4.0625rem;
-  padding-top: 0.875rem;
-  padding-bottom: 0.8125rem;
-  padding-right: 1.75rem;
+#signup__content #welcome div p {
+  width: 15.6875rem;
+  height: 1.5rem;
+  color: rgb(51, 51, 51);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+#signup form #data__mail,
+#signup form #data__uname,
+#signup form #data_pswd {
+  width: 100%;
+  height: 5.4375rem;
+  padding: 0px;
+  margin-bottom: 2rem;
+  /* border: 1px solid green; */
+}
+
+#signup form #data_mail div,
+#signup form #data_uname div,
+#signup form #data_pswd div {
+  width: 41.5625rem;
+  height: 1.6875rem;
+}
+
+#signup form #data_mail div label,
+#signup form #data_uname div label,
+#signup form #data_pswd div label {
+  width: 2.75rem;
+  height: 1.5rem;
+  color: rgb(102, 102, 102);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#signup form #data_pswd div label {
+  width: 4.8125rem;
+}
+
+#signup form input {
+  width: 100%;
+  height: 3.5rem;
+  border: 0.0625rem solid rgba(102, 102, 102, 0.35);
+  border-radius: 0.75rem;
+}
+
+#signup form #data__pswd {
+  width: 100%;
+  height: 10.0625rem;
+}
+
+#signup form #data_pswd #pswd__pattern {
+  width: 40.3125rem;
+  height: 4.625rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#signup form #data_pswd #pswd__pattern .pswd__pattern__list {
+  width: 12.625rem;
+  height: 100%;
+}
+
+#signup form div#recievemail {
+  width: 40.1875rem;
+  height: 4rem;
+  color: rgb(51, 51, 51);
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+#signup form div#recievemail input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#signup form div#recievemail input[type="checkbox"]:checked {
+  background: rgb(17, 17, 17);
+}
+
+#signup form div#recievemail p {
+  width: 37.6875rem;
+  height: 3rem;
+  color: rgb(51, 51, 51);
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#signup form div#terms {
+  width: 37rem;
+  height: 2.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#signup form div#terms p {
+  width: 36.5rem;
+  height: 1.5rem;
+  color: rgb(51, 51, 51);
+  font-family: "Poppins" sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#signup form #createbutton {
+  width: 16rem;
+  height: 6.25rem;
+}
+#signup form input[type="submit"] {
+  width: 16rem;
+  height: 4rem;
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(17, 17, 17, 0.25);
+  line-height: 2.0625rem;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 2.5rem;
+  padding: 0.9375rem 1.9375rem 1rem 1.9375rem;
+}
+
+/**********LOGIN**********/
+body#login {
+  width: 90em;
+  height: 71.875em;
+  margin: 0;
+  padding: 0;
+}
+
+section#login__content {
+  width: 90rem;
+  height: 67.9375rem;
+}
+
+section#login__content div:first-child {
+  width: 40.25rem;
+  height: 60.9375rem;
+  padding: 0;
+  margin: 3.5rem 25.25rem 3.5rem 24.5rem;
+}
+
+section#login__content__create {
+  width: 100%;
+  height: 40.875rem;
+}
+
+section#login__content__create h1 {
+  width: 28.4375rem;
+  height: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+
+section#login__content__create form {
+  width: 100%;
+  height: 35.375rem;
+  background: rgb(255, 255, 255);
+  border: 0.0625rem solid rgba(102, 102, 102, 0.35);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+section#login__content__create form div#form__content {
+  width: 36.25rem;
+  height: 24.375rem;
+  margin: 0;
+  border: 2px solid red;
+}
+
+section#login__content__create form div#form__content p:first-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+section#login__content__create form div#form__content__data {
+  width: 36.25rem;
+  height: 14.875rem;
+  margin-top: 2rem;
+  margin-bottom: 2.125rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: column;
+}
+
+section#login__content__create form div#form__content__data__mail {
+  width: 36.25rem;
+  height: 5.4375rem;
+}
+
+section#login__content__create form div#form__content__data__mail label {
+  width: 100%;
+  height: 1.6875rem;
+}
+
+section#login__content__join {
+  width: 100%;
+  height: 17.375rem;
+  padding: 2rem;
+  background: rgb(249, 248, 248);
+  border: 0.0625rem solid rgba(102, 102, 102, 0.35);
+  border-radius: 1.5rem;
+  margin-bottom: 0;
+}
+
+section#login__content__join h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(17, 17, 17);
+  line-height: 1.875rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+section#login__content__join p {
+  width: 22.8125rem;
+  height: 6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  line-height: 1.5rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+section#login__content__join button {
+  width: 11.25rem;
 }
