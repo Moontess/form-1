@@ -4,80 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body id="Login">
-    <div>
-      <img src="../form 1/images/Logo.png" alt="Logo" />
+  <body>
+    <div id="login">
+      <header>
+        <nav>
+          <img src="../form 1/images/Logo.png" alt="Logo" />
+        </nav>
+      </header>
       <hr />
-    </div>
-    
-    <section id="login__content">
-      <div>
-        <section id="login__content__create">
-          <h1>Sign in or create an account</h1>
+
+      <div id="login__content">
+          <section id="login__content__create">
+            <h1>Sign in or create an account</h1>
+
+            <form action="#" method="post">
+              <div id="form__content">
+                <p>*indicates required field</p>
+
+                <div id="data">
+                  <div id="data__mail">
+                    <div>
+                      <label for="mail">Email</label>
+                    </div>
+                    <input type="mail" name="mail" id="mail" />
+                  </div>
+
+                  <div id="data__pswd">
+                    <div>
+                      <label for="pswd">Password</label>
+                    </div>
+                    <input type="password" name="pswd" id="pswd" />
+                  </div>
+
+                  <div id="others">
+                    <div id="check">
+                      <input type="checkbox" />
+                    </div>
+                    <div id="keep">
+                      <p>Keep me sign in</p>
+                    </div>
+
+                    <div>
+                      <p><a href="#">Forget your username?</a></p>
+                      <p><a href="#">Forget your password?</a></p>
+                    </div>
+                    
+                    <div id="tooltip">
+                      <p>
+                        Checking this box will reduce the number of times you’reasked to sign in. To keep your account secure, use this option only on your personal devices.
+                      </p>
+                    </div>
+                  </div>  
+                </div>
+                <button>Sign in</button>
+              </div>
+            </form>
+          </section>
           
-          <form action="#" method="post">
-            <div id="form__content">
 
-              <p>*indicates required field</p>
-
-              <div id="form__content__data">
-                <div id="form__content__data__mail">
-                  <label for="uname/mail">*User name or email address
-                    <span> 
-                      <i></i>
-                    Hide</span>
-                  </label>
-                  <input type="text" name="uname/mail" id="uname/mail" />
-                </div>
-      
-                <div id="form__content__data__pswd">
-                  <label for="pswd">*Password</label>
-                  <input type="password" name="password" id="pswd" />
-                </div>
-      
-                <div>
-                  <p>
-                    <input type="checkbox" />
-                    Keep me sign in
-                    <span><i></i></span>
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <p><a href="#">Forget your username?</a></p>
-                <p><a href="#">Forget your password?</a></p>
-              </div>
-  
-              <div>
-                <p>
-                  Checking this box will reduce the number of times you’re asked
-                  to sign in. To keep your account secure, use this option only on
-                  your personal devices.
-                </p>
-              </div>
-            </div>
-
-            <button>Sign in</button>
-          </form>
-        </section>
-
-        <section id="login__content__join">
-           <h2>Join our rewards</h2>
-           <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis
-        maximus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-        lobortis maximus
+          <section id="login__content__join">
+            <h2>Join our rewards</h2>
+            <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lobortis maximus
             </p>
-          <button>Join now</button>
-       </section>
-     </section>
+            <button>Join now</button>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
