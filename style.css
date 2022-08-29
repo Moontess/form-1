@@ -449,15 +449,20 @@ form #data_pswd div label {
 
 #sign__in {
   width: 11.25rem;
-  color: rgba(255, 255, 255, 1);
   background-color: rgba(17, 17, 17, 0.25);
   border: none;
   border-radius: 2rem;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  line-height: 2.0625rem;
   padding: 0.9375rem 3.28125rem 1rem 3.28125rem;
   margin: 2rem 2rem 0 22.5rem;
+}
+
+#sign__in a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: "Poppins";
+  line-height: 2.0625rem;
 }
 
 span {
