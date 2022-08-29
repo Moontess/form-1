@@ -39,7 +39,8 @@ body {
   padding-left: 1.5rem;
   padding-top: 1.5rem;
 }
-#signup #signup__container div#logo img {
+#signup #signup__container div#logo img,
+#login header nav img {
   width: 2rem;
   height: 2rem;
 }
@@ -148,7 +149,7 @@ form #data_pswd div label {
 }
 
 #signup__content form #data__pswd #pswd__pattern .pswd__pattern__list ul {
-  list-style-image: url("./images/Ellipse\ 1.png");
+  list-style-image: url("./images/ellipse.png");
 }
 
 #signup__content form #data__pswd #pswd__pattern .pswd__pattern__list ul li {
@@ -380,11 +381,8 @@ form #data_pswd div label {
   flex-direction: row;
   padding: 0px;
   margin: 0;
+  margin-top: 0.5rem;
 }
-
-/* #others #others__content {
-  margin-right: 1rem;
-} */
 
 #paras,
 #paras p {
@@ -402,6 +400,10 @@ form #data_pswd div label {
   line-height: 1.5rem;
   color: rgb(51, 51, 51);
   margin-bottom: 2.5rem;
+}
+
+#paras p:nth-child(1) input {
+  margin-right: 0.5rem;
 }
 
 #paras div {
@@ -455,7 +457,20 @@ form #data_pswd div label {
   font-weight: 500;
   line-height: 2.0625rem;
   padding: 0.9375rem 3.28125rem 1rem 3.28125rem;
-  margin: 2rem 2rem 0 32rem;
+  margin: 2rem 2rem 0 22.5rem;
+}
+
+span {
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  /* text-align: right; */
+  float: right;
+  color: rgba(102, 102, 102, 0.8);
+}
+
+span i {
+  margin-right: 0.74375rem;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
